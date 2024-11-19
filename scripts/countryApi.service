@@ -1,0 +1,15 @@
+[Unit]
+Description=countryAppService
+Requires=network.target
+After=network.target
+
+[Service]
+Type=simple
+User=fedora
+Group=fedora
+WorkingDirectory=/home/fedora/country_backend/app/
+ExecStart=/home/fedora/country_backend/app/countryApi
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
