@@ -5,6 +5,7 @@ App is only dedicated to server country and city information to use in other app
 Put this repo folder in:
 **~/country_backend/countryApi**
 
+### BE CAREFUL, __make db__ drops the whole db, modify script beforehand
 Update the app (need to have github access keys):
 ```bash
 bash ~/country_backend/countryApi/scripts/update_country.sh
