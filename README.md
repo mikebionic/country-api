@@ -22,6 +22,8 @@ APP runs on port **7888**, configure your proxy manager accordingly
 Put this repo folder in:
 **~/country_backend/countryApi**
 
+### BE CAREFUL, **make db** drops the whole db, modify script beforehand
+
 Update the application using script:
 
 ```bash
