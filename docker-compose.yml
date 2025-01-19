@@ -1,0 +1,43 @@
+services:
+  db:
+    image: postgres:15
+    container_name: country_db
+    environment:
+      POSTGRES_USER: country_db
+      POSTGRES_PASSWORD: country_db
+      POSTGRES_DB: country_db
+    ports:
+      - "15432:5432"
+    volumes:
+      - postgres_country:/var/lib/postgresql/data
+    networks:
+      - country_project
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U country_db"]
+      interval: 5s
+      timeout: 2s
+      retries: 5
+
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: country-app
+    depends_on:
+      db:
+        condition: service_healthy
+    ports:
+      - "7888:7888"
+    networks:
+      - country_project
+    command: >
+      sh -c "chmod +x /app/scripts/init-db.sh &&
+        bash -x /app/scripts/init-db.sh ||
+        { echo 'DB initialization failed'; exit 1; } &&
+        ./main
+        "
+volumes:
+  postgres_country:
+
+networks:
+  country_project:
