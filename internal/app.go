@@ -22,14 +22,20 @@ func InitApp() *gin.Engine {
 	router := gin.New()
 	router.SetTrustedProxies(nil)
 	router.Use(gin.Logger())
+	router.Use(gin.Recovery())
 	router.Use(cors.New(cors.Config{
-		AllowOrigins:     []string{"*"},
-		AllowMethods:     []string{"*"},
-		AllowHeaders:     []string{"*"},
-		ExposeHeaders:    []string{"*"},
-		AllowCredentials: true,
-		MaxAge:           12 * time.Hour,
+		AllowAllOrigins: true,
+		AllowMethods:    []string{"GET", "POST", "PUT", "DELETE", "OPTIONS"},
+		AllowHeaders:    []string{"*"},
+		MaxAge:          12 * time.Hour,
 	}))
+	router.Use(func(ctx *gin.Context) {
+		if ctx.Request.Method == "OPTIONS" {
+			ctx.AbortWithStatus(204)
+			return
+		}
+		ctx.Next()
+	})
 
 	log.SetOutput(gin.DefaultWriter)
 	countryLib.CountryLib(router)
