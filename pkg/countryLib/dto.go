@@ -67,3 +67,103 @@ type CitySearchResult struct {
 	Flag        int        `json:"flag"`
 	WikiDataID  *string    `json:"wikiDataId"`
 }
+
+type CreateCountryRequest struct {
+	Name           string   `json:"name" binding:"required"`
+	ISO3           *string  `json:"iso3"`
+	NumericCode    *string  `json:"numeric_code"`
+	ISO2           *string  `json:"iso2"`
+	Phonecode      *string  `json:"phonecode"`
+	Capital        *string  `json:"capital"`
+	Currency       *string  `json:"currency"`
+	CurrencyName   *string  `json:"currency_name"`
+	CurrencySymbol *string  `json:"currency_symbol"`
+	TLD            *string  `json:"tld"`
+	Native         *string  `json:"native"`
+	Region         *string  `json:"region"`
+	RegionID       *int64   `json:"region_id"`
+	Subregion      *string  `json:"subregion"`
+	SubregionID    *int64   `json:"subregion_id"`
+	Nationality    *string  `json:"nationality"`
+	Timezones      *string  `json:"timezones"`
+	Translations   *string  `json:"translations"`
+	Latitude       *float64 `json:"latitude"`
+	Longitude      *float64 `json:"longitude"`
+	Emoji          *string  `json:"emoji"`
+	EmojiU         *string  `json:"emojiU"`
+	WikiDataID     *string  `json:"wikiDataId"`
+}
+
+type UpdateCountryRequest struct {
+	Name           string   `json:"name" binding:"required"`
+	ISO3           *string  `json:"iso3"`
+	NumericCode    *string  `json:"numeric_code"`
+	ISO2           *string  `json:"iso2"`
+	Phonecode      *string  `json:"phonecode"`
+	Capital        *string  `json:"capital"`
+	Currency       *string  `json:"currency"`
+	CurrencyName   *string  `json:"currency_name"`
+	CurrencySymbol *string  `json:"currency_symbol"`
+	TLD            *string  `json:"tld"`
+	Native         *string  `json:"native"`
+	Region         *string  `json:"region"`
+	RegionID       *int64   `json:"region_id"`
+	Subregion      *string  `json:"subregion"`
+	SubregionID    *int64   `json:"subregion_id"`
+	Nationality    *string  `json:"nationality"`
+	Timezones      *string  `json:"timezones"`
+	Translations   *string  `json:"translations"`
+	Latitude       *float64 `json:"latitude"`
+	Longitude      *float64 `json:"longitude"`
+	Emoji          *string  `json:"emoji"`
+	EmojiU         *string  `json:"emojiU"`
+	WikiDataID     *string  `json:"wikiDataId"`
+}
+
+type CreateCountryResponse struct {
+	ID        int64     `json:"id"`
+	Name      string    `json:"name"`
+	CreatedAt time.Time `json:"created_at"`
+}
+
+type UpdateCountryResponse struct {
+	ID        int64     `json:"id"`
+	Name      string    `json:"name"`
+	UpdatedAt time.Time `json:"updated_at"`
+}
+
+type CreateCityRequest struct {
+	Name        string  `json:"name" binding:"required"`
+	StateID     int64   `json:"state_id"`
+	StateCode   string  `json:"state_code"`
+	CountryID   int64   `json:"country_id" binding:"required"`
+	CountryCode string  `json:"country_code"`
+	Latitude    float64 `json:"latitude"`
+	Longitude   float64 `json:"longitude"`
+	WikiDataID  string  `json:"wikiDataId"`
+}
+
+type UpdateCityRequest struct {
+	Name        string  `json:"name" binding:"required"`
+	StateID     int64   `json:"state_id"`
+	StateCode   string  `json:"state_code"`
+	CountryID   int64   `json:"country_id" binding:"required"`
+	CountryCode string  `json:"country_code"`
+	Latitude    float64 `json:"latitude"`
+	Longitude   float64 `json:"longitude"`
+	WikiDataID  string  `json:"wikiDataId"`
+}
+
+type CreateCityResponse struct {
+	ID        int64     `json:"id"`
+	Name      string    `json:"name"`
+	CountryID int64     `json:"country_id"`
+	CreatedAt time.Time `json:"created_at"`
+}
+
+type UpdateCityResponse struct {
+	ID        int64     `json:"id"`
+	Name      string    `json:"name"`
+	CountryID int64     `json:"country_id"`
+	UpdatedAt time.Time `json:"updated_at"`
+}
