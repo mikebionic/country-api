@@ -1,0 +1,1293 @@
+{
+	"info": {
+		"_postman_id": "4c9c69e6-4d77-4e66-bef3-c395e07f2f7e",
+		"name": "CountryLib Location API by MeCreate",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "10450180",
+		"_collection_link": "https://broxyteam.postman.co/workspace/BroxyTeam-Workspace~22197206-b3e8-435f-b6ad-7fe713f43b06/collection/10450180-4c9c69e6-4d77-4e66-bef3-c395e07f2f7e?action=share&source=collection_link&creator=10450180"
+	},
+	"item": [
+		{
+			"name": "Countries",
+			"item": [
+				{
+					"name": "Get Countries List",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{chost}}/{{cprefix}}/countries?page=1&per_page=10",
+							"host": [
+								"{{chost}}"
+							],
+							"path": [
+								"{{cprefix}}",
+								"countries"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "per_page",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get Countries List",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{chost}}/{{cprefix}}/countries?page=1&per_page=10",
+									"host": [
+										"{{chost}}"
+									],
+									"path": [
+										"{{cprefix}}",
+										"countries"
+									],
+									"query": [
+										{
+											"key": "page",
+											"value": "1"
+										},
+										{
+											"key": "per_page",
+											"value": "10"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 23 Jun 2025 09:40:51 GMT"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Country list\",\n    \"success\": true,\n    \"data\": {\n        \"total\": 250,\n        \"page\": 1,\n        \"per_page\": 10,\n        \"data\": [\n            {\n                \"id\": 1,\n                \"name\": \"Afghanistan\",\n                \"iso3\": \"AFG\",\n                \"numeric_code\": \"004\",\n                \"iso2\": \"AF\",\n                \"phonecode\": \"93\",\n                \"capital\": \"Kabul\",\n                \"currency\": \"AFN\",\n                \"currency_name\": \"Afghan afghani\",\n                \"currency_symbol\": \"؋\",\n                \"tld\": \".af\",\n                \"native\": \"افغانستان\",\n                \"region\": \"Asia\",\n                \"region_id\": 3,\n                \"subregion\": \"Southern Asia\",\n                \"subregion_id\": 14,\n                \"nationality\": \"Afghan\",\n                \"timezones\": \"[{\\\"zoneName\\\":\\\"Asia/Kabul\\\",\\\"gmtOffset\\\":16200,\\\"gmtOffsetName\\\":\\\"UTC+04:30\\\",\\\"abbreviation\\\":\\\"AFT\\\",\\\"tzName\\\":\\\"Afghanistan Time\\\"}]\",\n                \"translations\": \"{\\\"ko\\\":\\\"아프가니스탄\\\",\\\"pt-BR\\\":\\\"Afeganistão\\\",\\\"pt\\\":\\\"Afeganistão\\\",\\\"nl\\\":\\\"Afghanistan\\\",\\\"hr\\\":\\\"Afganistan\\\",\\\"fa\\\":\\\"افغانستان\\\",\\\"de\\\":\\\"Afghanistan\\\",\\\"es\\\":\\\"Afganistán\\\",\\\"fr\\\":\\\"Afghanistan\\\",\\\"ja\\\":\\\"アフガニスタン\\\",\\\"it\\\":\\\"Afghanistan\\\",\\\"zh-CN\\\":\\\"阿富汗\\\",\\\"tr\\\":\\\"Afganistan\\\",\\\"ru\\\":\\\"Афганистан\\\",\\\"uk\\\":\\\"Афганістан\\\",\\\"pl\\\":\\\"Afganistan\\\"}\",\n                \"latitude\": 33,\n                \"longitude\": 65,\n                \"emoji\": \"🇦🇫\",\n                \"emojiU\": \"U+1F1E6 U+1F1EB\",\n                \"created_at\": \"2018-07-21T12:41:03Z\",\n                \"updated_at\": \"2023-08-09T02:34:58Z\",\n                \"flag\": 1,\n                \"wikiDataId\": \"Q889\"\n            },\n            {\n                \"id\": 2,\n                \"name\": \"Aland Islands\",\n                \"iso3\": \"ALA\",\n                \"numeric_code\": \"248\",\n                \"iso2\": \"AX\",\n                \"phonecode\": \"358\",\n                \"capital\": \"Mariehamn\",\n                \"currency\": \"EUR\",\n                \"currency_name\": \"Euro\",\n                \"currency_symbol\": \"€\",\n                \"tld\": \".ax\",\n                \"native\": \"Åland\",\n                \"region\": \"Europe\",\n                \"region_id\": 4,\n                \"subregion\": \"Northern Europe\",\n                \"subregion_id\": 18,\n                \"nationality\": \"Aland Island\",\n                \"timezones\": \"[{\\\"zoneName\\\":\\\"Europe/Mariehamn\\\",\\\"gmtOffset\\\":7200,\\\"gmtOffsetName\\\":\\\"UTC+02:00\\\",\\\"abbreviation\\\":\\\"EET\\\",\\\"tzName\\\":\\\"Eastern European Time\\\"}]\",\n                \"translations\": \"{\\\"ko\\\":\\\"올란드 제도\\\",\\\"pt-BR\\\":\\\"Ilhas de Aland\\\",\\\"pt\\\":\\\"Ilhas de Aland\\\",\\\"nl\\\":\\\"Ålandeilanden\\\",\\\"hr\\\":\\\"Ålandski otoci\\\",\\\"fa\\\":\\\"جزایر الند\\\",\\\"de\\\":\\\"Åland\\\",\\\"es\\\":\\\"Alandia\\\",\\\"fr\\\":\\\"Åland\\\",\\\"ja\\\":\\\"オーランド諸島\\\",\\\"it\\\":\\\"Isole Aland\\\",\\\"zh-CN\\\":\\\"奥兰群岛\\\",\\\"tr\\\":\\\"Åland Adalari\\\",\\\"ru\\\":\\\"Аландские острова\\\",\\\"uk\\\":\\\"Аландські острови\\\",\\\"pl\\\":\\\"Wyspy Alandzkie\\\"}\",\n                \"latitude\": 60.116667,\n                \"longitude\": 19.9,\n                \"emoji\": \"🇦🇽\",\n                \"emojiU\": \"U+1F1E6 U+1F1FD\",\n                \"created_at\": \"2018-07-21T12:41:03Z\",\n                \"updated_at\": \"2024-09-05T16:47:03Z\",\n                \"flag\": 1,\n                \"wikiDataId\": null\n            },\n            {\n                \"id\": 3,\n                \"name\": \"Albania\",\n                \"iso3\": \"ALB\",\n                \"numeric_code\": \"008\",\n                \"iso2\": \"AL\",\n                \"phonecode\": \"355\",\n                \"capital\": \"Tirana\",\n                \"currency\": \"ALL\",\n                \"currency_name\": \"Albanian lek\",\n                \"currency_symbol\": \"Lek\",\n                \"tld\": \".al\",\n                \"native\": \"Shqipëria\",\n                \"region\": \"Europe\",\n                \"region_id\": 4,\n                \"subregion\": \"Southern Europe\",\n                \"subregion_id\": 16,\n                \"nationality\": \"Albanian \",\n                \"timezones\": \"[{\\\"zoneName\\\":\\\"Europe/Tirane\\\",\\\"gmtOffset\\\":3600,\\\"gmtOffsetName\\\":\\\"UTC+01:00\\\",\\\"abbreviation\\\":\\\"CET\\\",\\\"tzName\\\":\\\"Central European Time\\\"}]\",\n                \"translations\": \"{\\\"ko\\\":\\\"알바니아\\\",\\\"pt-BR\\\":\\\"Albânia\\\",\\\"pt\\\":\\\"Albânia\\\",\\\"nl\\\":\\\"Albanië\\\",\\\"hr\\\":\\\"Albanija\\\",\\\"fa\\\":\\\"آلبانی\\\",\\\"de\\\":\\\"Albanien\\\",\\\"es\\\":\\\"Albania\\\",\\\"fr\\\":\\\"Albanie\\\",\\\"ja\\\":\\\"アルバニア\\\",\\\"it\\\":\\\"Albania\\\",\\\"zh-CN\\\":\\\"阿尔巴尼亚\\\",\\\"tr\\\":\\\"Arnavutluk\\\",\\\"ru\\\":\\\"Албания\\\",\\\"uk\\\":\\\"Албанія\\\",\\\"pl\\\":\\\"Albania\\\"}\",\n                \"latitude\": 41,\n                \"longitude\": 20,\n                \"emoji\": \"🇦🇱\",\n                \"emojiU\": \"U+1F1E6 U+1F1F1\",\n                \"created_at\": \"2018-07-21T12:41:03Z\",\n                \"updated_at\": \"2023-08-09T02:34:58Z\",\n                \"flag\": 1,\n                \"wikiDataId\": \"Q222\"\n            },\n            {\n                \"id\": 4,\n                \"name\": \"Algeria\",\n                \"iso3\": \"DZA\",\n                \"numeric_code\": \"012\",\n                \"iso2\": \"DZ\",\n                \"phonecode\": \"213\",\n                \"capital\": \"Algiers\",\n                \"currency\": \"DZD\",\n                \"currency_name\": \"Algerian dinar\",\n                \"currency_symbol\": \"دج\",\n                \"tld\": \".dz\",\n                \"native\": \"الجزائر\",\n                \"region\": \"Africa\",\n                \"region_id\": 1,\n                \"subregion\": \"Northern Africa\",\n                \"subregion_id\": 1,\n                \"nationality\": \"Algerian\",\n                \"timezones\": \"[{\\\"zoneName\\\":\\\"Africa/Algiers\\\",\\\"gmtOffset\\\":3600,\\\"gmtOffsetName\\\":\\\"UTC+01:00\\\",\\\"abbreviation\\\":\\\"CET\\\",\\\"tzName\\\":\\\"Central European Time\\\"}]\",\n                \"translations\": \"{\\\"ko\\\":\\\"알제리\\\",\\\"pt-BR\\\":\\\"Argélia\\\",\\\"pt\\\":\\\"Argélia\\\",\\\"nl\\\":\\\"Algerije\\\",\\\"hr\\\":\\\"Alžir\\\",\\\"fa\\\":\\\"الجزایر\\\",\\\"de\\\":\\\"Algerien\\\",\\\"es\\\":\\\"Argelia\\\",\\\"fr\\\":\\\"Algérie\\\",\\\"ja\\\":\\\"アルジェリア\\\",\\\"it\\\":\\\"Algeria\\\",\\\"zh-CN\\\":\\\"阿尔及利亚\\\",\\\"tr\\\":\\\"Cezayir\\\",\\\"ru\\\":\\\"Алжир\\\",\\\"uk\\\":\\\"Алжир\\\",\\\"pl\\\":\\\"Algieria\\\"}\",\n                \"latitude\": 28,\n                \"longitude\": 3,\n                \"emoji\": \"🇩🇿\",\n                \"emojiU\": \"U+1F1E9 U+1F1FF\",\n                \"created_at\": \"2018-07-21T12:41:03Z\",\n                \"updated_at\": \"2023-08-09T02:34:58Z\",\n                \"flag\": 1,\n                \"wikiDataId\": \"Q262\"\n            },\n            {\n                \"id\": 5,\n                \"name\": \"American Samoa\",\n                \"iso3\": \"ASM\",\n                \"numeric_code\": \"016\",\n                \"iso2\": \"AS\",\n                \"phonecode\": \"1\",\n                \"capital\": \"Pago Pago\",\n                \"currency\": \"USD\",\n                \"currency_name\": \"US Dollar\",\n                \"currency_symbol\": \"$\",\n                \"tld\": \".as\",\n                \"native\": \"American Samoa\",\n                \"region\": \"Oceania\",\n                \"region_id\": 5,\n                \"subregion\": \"Polynesia\",\n                \"subregion_id\": 22,\n                \"nationality\": \"American Samoan\",\n                \"timezones\": \"[{\\\"zoneName\\\":\\\"Pacific/Pago_Pago\\\",\\\"gmtOffset\\\":-39600,\\\"gmtOffsetName\\\":\\\"UTC-11:00\\\",\\\"abbreviation\\\":\\\"SST\\\",\\\"tzName\\\":\\\"Samoa Standard Time\\\"}]\",\n                \"translations\": \"{\\\"ko\\\":\\\"아메리칸사모아\\\",\\\"pt-BR\\\":\\\"Samoa Americana\\\",\\\"pt\\\":\\\"Samoa Americana\\\",\\\"nl\\\":\\\"Amerikaans Samoa\\\",\\\"hr\\\":\\\"Američka Samoa\\\",\\\"fa\\\":\\\"ساموآی آمریکا\\\",\\\"de\\\":\\\"Amerikanisch-Samoa\\\",\\\"es\\\":\\\"Samoa Americana\\\",\\\"fr\\\":\\\"Samoa américaines\\\",\\\"ja\\\":\\\"アメリカ領サモア\\\",\\\"it\\\":\\\"Samoa Americane\\\",\\\"zh-CN\\\":\\\"美属萨摩亚\\\",\\\"tr\\\":\\\"Amerikan Samoasi\\\",\\\"ru\\\":\\\"Американское Самоа\\\",\\\"uk\\\":\\\"Американське Самоа\\\",\\\"pl\\\":\\\"Samoa Amerykańskie\\\"}\",\n                \"latitude\": -14.33333333,\n                \"longitude\": -170,\n                \"emoji\": \"🇦🇸\",\n                \"emojiU\": \"U+1F1E6 U+1F1F8\",\n                \"created_at\": \"2018-07-21T12:41:03Z\",\n                \"updated_at\": \"2024-09-05T16:47:03Z\",\n                \"flag\": 1,\n                \"wikiDataId\": null\n            },\n            {\n                \"id\": 6,\n                \"name\": \"Andorra\",\n                \"iso3\": \"AND\",\n                \"numeric_code\": \"020\",\n                \"iso2\": \"AD\",\n                \"phonecode\": \"376\",\n                \"capital\": \"Andorra la Vella\",\n                \"currency\": \"EUR\",\n                \"currency_name\": \"Euro\",\n                \"currency_symbol\": \"€\",\n                \"tld\": \".ad\",\n                \"native\": \"Andorra\",\n                \"region\": \"Europe\",\n                \"region_id\": 4,\n                \"subregion\": \"Southern Europe\",\n                \"subregion_id\": 16,\n                \"nationality\": \"Andorran\",\n                \"timezones\": \"[{\\\"zoneName\\\":\\\"Europe/Andorra\\\",\\\"gmtOffset\\\":3600,\\\"gmtOffsetName\\\":\\\"UTC+01:00\\\",\\\"abbreviation\\\":\\\"CET\\\",\\\"tzName\\\":\\\"Central European Time\\\"}]\",\n                \"translations\": \"{\\\"ko\\\":\\\"안도라\\\",\\\"pt-BR\\\":\\\"Andorra\\\",\\\"pt\\\":\\\"Andorra\\\",\\\"nl\\\":\\\"Andorra\\\",\\\"hr\\\":\\\"Andora\\\",\\\"fa\\\":\\\"آندورا\\\",\\\"de\\\":\\\"Andorra\\\",\\\"es\\\":\\\"Andorra\\\",\\\"fr\\\":\\\"Andorre\\\",\\\"ja\\\":\\\"アンドラ\\\",\\\"it\\\":\\\"Andorra\\\",\\\"zh-CN\\\":\\\"安道尔\\\",\\\"tr\\\":\\\"Andorra\\\",\\\"ru\\\":\\\"Андорра\\\",\\\"uk\\\":\\\"Андорра\\\",\\\"pl\\\":\\\"Andora\\\"}\",\n                \"latitude\": 42.5,\n                \"longitude\": 1.5,\n                \"emoji\": \"🇦🇩\",\n                \"emojiU\": \"U+1F1E6 U+1F1E9\",\n                \"created_at\": \"2018-07-21T12:41:03Z\",\n                \"updated_at\": \"2023-08-09T02:34:58Z\",\n                \"flag\": 1,\n                \"wikiDataId\": \"Q228\"\n            },\n            {\n                \"id\": 7,\n                \"name\": \"Angola\",\n                \"iso3\": \"AGO\",\n                \"numeric_code\": \"024\",\n                \"iso2\": \"AO\",\n                \"phonecode\": \"244\",\n                \"capital\": \"Luanda\",\n                \"currency\": \"AOA\",\n                \"currency_name\": \"Angolan kwanza\",\n                \"currency_symbol\": \"Kz\",\n                \"tld\": \".ao\",\n                \"native\": \"Angola\",\n                \"region\": \"Africa\",\n                \"region_id\": 1,\n                \"subregion\": \"Middle Africa\",\n                \"subregion_id\": 2,\n                \"nationality\": \"Angolan\",\n                \"timezones\": \"[{\\\"zoneName\\\":\\\"Africa/Luanda\\\",\\\"gmtOffset\\\":3600,\\\"gmtOffsetName\\\":\\\"UTC+01:00\\\",\\\"abbreviation\\\":\\\"WAT\\\",\\\"tzName\\\":\\\"West Africa Time\\\"}]\",\n                \"translations\": \"{\\\"ko\\\":\\\"앙골라\\\",\\\"pt-BR\\\":\\\"Angola\\\",\\\"pt\\\":\\\"Angola\\\",\\\"nl\\\":\\\"Angola\\\",\\\"hr\\\":\\\"Angola\\\",\\\"fa\\\":\\\"آنگولا\\\",\\\"de\\\":\\\"Angola\\\",\\\"es\\\":\\\"Angola\\\",\\\"fr\\\":\\\"Angola\\\",\\\"ja\\\":\\\"アンゴラ\\\",\\\"it\\\":\\\"Angola\\\",\\\"zh-CN\\\":\\\"安哥拉\\\",\\\"tr\\\":\\\"Angola\\\",\\\"ru\\\":\\\"Ангола\\\",\\\"uk\\\":\\\"Ангола\\\",\\\"pl\\\":\\\"Angola\\\"}\",\n                \"latitude\": -12.5,\n                \"longitude\": 18.5,\n                \"emoji\": \"🇦🇴\",\n                \"emojiU\": \"U+1F1E6 U+1F1F4\",\n                \"created_at\": \"2018-07-21T12:41:03Z\",\n                \"updated_at\": \"2023-08-09T02:34:58Z\",\n                \"flag\": 1,\n                \"wikiDataId\": \"Q916\"\n            },\n            {\n                \"id\": 8,\n                \"name\": \"Anguilla\",\n                \"iso3\": \"AIA\",\n                \"numeric_code\": \"660\",\n                \"iso2\": \"AI\",\n                \"phonecode\": \"1\",\n                \"capital\": \"The Valley\",\n                \"currency\": \"XCD\",\n                \"currency_name\": \"East Caribbean dollar\",\n                \"currency_symbol\": \"$\",\n                \"tld\": \".ai\",\n                \"native\": \"Anguilla\",\n                \"region\": \"Americas\",\n                \"region_id\": 2,\n                \"subregion\": \"Caribbean\",\n                \"subregion_id\": 7,\n                \"nationality\": \"Anguillan\",\n                \"timezones\": \"[{\\\"zoneName\\\":\\\"America/Anguilla\\\",\\\"gmtOffset\\\":-14400,\\\"gmtOffsetName\\\":\\\"UTC-04:00\\\",\\\"abbreviation\\\":\\\"AST\\\",\\\"tzName\\\":\\\"Atlantic Standard Time\\\"}]\",\n                \"translations\": \"{\\\"ko\\\":\\\"앵귈라\\\",\\\"pt-BR\\\":\\\"Anguila\\\",\\\"pt\\\":\\\"Anguila\\\",\\\"nl\\\":\\\"Anguilla\\\",\\\"hr\\\":\\\"Angvila\\\",\\\"fa\\\":\\\"آنگویلا\\\",\\\"de\\\":\\\"Anguilla\\\",\\\"es\\\":\\\"Anguilla\\\",\\\"fr\\\":\\\"Anguilla\\\",\\\"ja\\\":\\\"アンギラ\\\",\\\"it\\\":\\\"Anguilla\\\",\\\"zh-CN\\\":\\\"安圭拉\\\",\\\"tr\\\":\\\"Anguilla\\\",\\\"ru\\\":\\\"Ангилья\\\",\\\"uk\\\":\\\"Ангілья\\\",\\\"pl\\\":\\\"Anguilla\\\"}\",\n                \"latitude\": 18.25,\n                \"longitude\": -63.16666666,\n                \"emoji\": \"🇦🇮\",\n                \"emojiU\": \"U+1F1E6 U+1F1EE\",\n                \"created_at\": \"2018-07-21T12:41:03Z\",\n                \"updated_at\": \"2024-09-05T16:47:03Z\",\n                \"flag\": 1,\n                \"wikiDataId\": null\n            },\n            {\n                \"id\": 9,\n                \"name\": \"Antarctica\",\n                \"iso3\": \"ATA\",\n                \"numeric_code\": \"010\",\n                \"iso2\": \"AQ\",\n                \"phonecode\": \"672\",\n                \"capital\": \"\",\n                \"currency\": \"AAD\",\n                \"currency_name\": \"Antarctican dollar\",\n                \"currency_symbol\": \"$\",\n                \"tld\": \".aq\",\n                \"native\": \"Antarctica\",\n                \"region\": \"Polar\",\n                \"region_id\": 6,\n                \"subregion\": \"\",\n                \"subregion_id\": null,\n                \"nationality\": \"Antarctic\",\n                \"timezones\": \"[{\\\"zoneName\\\":\\\"Antarctica/Casey\\\",\\\"gmtOffset\\\":39600,\\\"gmtOffsetName\\\":\\\"UTC+11:00\\\",\\\"abbreviation\\\":\\\"AWST\\\",\\\"tzName\\\":\\\"Australian Western Standard Time\\\"},{\\\"zoneName\\\":\\\"Antarctica/Davis\\\",\\\"gmtOffset\\\":25200,\\\"gmtOffsetName\\\":\\\"UTC+07:00\\\",\\\"abbreviation\\\":\\\"DAVT\\\",\\\"tzName\\\":\\\"Davis Time\\\"},{\\\"zoneName\\\":\\\"Antarctica/DumontDUrville\\\",\\\"gmtOffset\\\":36000,\\\"gmtOffsetName\\\":\\\"UTC+10:00\\\",\\\"abbreviation\\\":\\\"DDUT\\\",\\\"tzName\\\":\\\"Dumont d'Urville Time\\\"},{\\\"zoneName\\\":\\\"Antarctica/Mawson\\\",\\\"gmtOffset\\\":18000,\\\"gmtOffsetName\\\":\\\"UTC+05:00\\\",\\\"abbreviation\\\":\\\"MAWT\\\",\\\"tzName\\\":\\\"Mawson Station Time\\\"},{\\\"zoneName\\\":\\\"Antarctica/McMurdo\\\",\\\"gmtOffset\\\":46800,\\\"gmtOffsetName\\\":\\\"UTC+13:00\\\",\\\"abbreviation\\\":\\\"NZDT\\\",\\\"tzName\\\":\\\"New Zealand Daylight Time\\\"},{\\\"zoneName\\\":\\\"Antarctica/Palmer\\\",\\\"gmtOffset\\\":-10800,\\\"gmtOffsetName\\\":\\\"UTC-03:00\\\",\\\"abbreviation\\\":\\\"CLST\\\",\\\"tzName\\\":\\\"Chile Summer Time\\\"},{\\\"zoneName\\\":\\\"Antarctica/Rothera\\\",\\\"gmtOffset\\\":-10800,\\\"gmtOffsetName\\\":\\\"UTC-03:00\\\",\\\"abbreviation\\\":\\\"ROTT\\\",\\\"tzName\\\":\\\"Rothera Research Station Time\\\"},{\\\"zoneName\\\":\\\"Antarctica/Syowa\\\",\\\"gmtOffset\\\":10800,\\\"gmtOffsetName\\\":\\\"UTC+03:00\\\",\\\"abbreviation\\\":\\\"SYOT\\\",\\\"tzName\\\":\\\"Showa Station Time\\\"},{\\\"zoneName\\\":\\\"Antarctica/Troll\\\",\\\"gmtOffset\\\":0,\\\"gmtOffsetName\\\":\\\"UTC±00\\\",\\\"abbreviation\\\":\\\"GMT\\\",\\\"tzName\\\":\\\"Greenwich Mean Time\\\"},{\\\"zoneName\\\":\\\"Antarctica/Vostok\\\",\\\"gmtOffset\\\":21600,\\\"gmtOffsetName\\\":\\\"UTC+06:00\\\",\\\"abbreviation\\\":\\\"VOST\\\",\\\"tzName\\\":\\\"Vostok Station Time\\\"}]\",\n                \"translations\": \"{\\\"ko\\\":\\\"남극\\\",\\\"pt-BR\\\":\\\"Antártida\\\",\\\"pt\\\":\\\"Antárctida\\\",\\\"nl\\\":\\\"Antarctica\\\",\\\"hr\\\":\\\"Antarktika\\\",\\\"fa\\\":\\\"جنوبگان\\\",\\\"de\\\":\\\"Antarktika\\\",\\\"es\\\":\\\"Antártida\\\",\\\"fr\\\":\\\"Antarctique\\\",\\\"ja\\\":\\\"南極大陸\\\",\\\"it\\\":\\\"Antartide\\\",\\\"zh-CN\\\":\\\"南极洲\\\",\\\"tr\\\":\\\"Antartika\\\",\\\"ru\\\":\\\"Антарктида\\\",\\\"uk\\\":\\\"Антарктида\\\",\\\"pl\\\":\\\"Antarktyda\\\"}\",\n                \"latitude\": -74.65,\n                \"longitude\": 4.48,\n                \"emoji\": \"🇦🇶\",\n                \"emojiU\": \"U+1F1E6 U+1F1F6\",\n                \"created_at\": \"2018-07-21T12:41:03Z\",\n                \"updated_at\": \"2023-08-11T21:01:40Z\",\n                \"flag\": 1,\n                \"wikiDataId\": null\n            },\n            {\n                \"id\": 10,\n                \"name\": \"Antigua and Barbuda\",\n                \"iso3\": \"ATG\",\n                \"numeric_code\": \"028\",\n                \"iso2\": \"AG\",\n                \"phonecode\": \"1\",\n                \"capital\": \"St. John's\",\n                \"currency\": \"XCD\",\n                \"currency_name\": \"Eastern Caribbean dollar\",\n                \"currency_symbol\": \"$\",\n                \"tld\": \".ag\",\n                \"native\": \"Antigua and Barbuda\",\n                \"region\": \"Americas\",\n                \"region_id\": 2,\n                \"subregion\": \"Caribbean\",\n                \"subregion_id\": 7,\n                \"nationality\": \"Antiguan or Barbudan\",\n                \"timezones\": \"[{\\\"zoneName\\\":\\\"America/Antigua\\\",\\\"gmtOffset\\\":-14400,\\\"gmtOffsetName\\\":\\\"UTC-04:00\\\",\\\"abbreviation\\\":\\\"AST\\\",\\\"tzName\\\":\\\"Atlantic Standard Time\\\"}]\",\n                \"translations\": \"{\\\"ko\\\":\\\"앤티가 바부다\\\",\\\"pt-BR\\\":\\\"Antígua e Barbuda\\\",\\\"pt\\\":\\\"Antígua e Barbuda\\\",\\\"nl\\\":\\\"Antigua en Barbuda\\\",\\\"hr\\\":\\\"Antigva i Barbuda\\\",\\\"fa\\\":\\\"آنتیگوا و باربودا\\\",\\\"de\\\":\\\"Antigua und Barbuda\\\",\\\"es\\\":\\\"Antigua y Barbuda\\\",\\\"fr\\\":\\\"Antigua-et-Barbuda\\\",\\\"ja\\\":\\\"アンティグア・バーブーダ\\\",\\\"it\\\":\\\"Antigua e Barbuda\\\",\\\"zh-CN\\\":\\\"安提瓜和巴布达\\\",\\\"tr\\\":\\\"Antigua Ve Barbuda\\\",\\\"ru\\\":\\\"Антигуа и Барбуда\\\",\\\"uk\\\":\\\"Антигуа і Барбуда\\\",\\\"pl\\\":\\\"Antigua i Barbuda\\\"}\",\n                \"latitude\": 17.05,\n                \"longitude\": -61.8,\n                \"emoji\": \"🇦🇬\",\n                \"emojiU\": \"U+1F1E6 U+1F1EC\",\n                \"created_at\": \"2018-07-21T12:41:03Z\",\n                \"updated_at\": \"2024-09-05T16:47:03Z\",\n                \"flag\": 1,\n                \"wikiDataId\": \"Q781\"\n            }\n        ]\n    },\n    \"errorMsg\": \"\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Search Countries",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{chost}}/{{cprefix}}/countries/search?q=turkm&page=1&per_page=10",
+							"host": [
+								"{{chost}}"
+							],
+							"path": [
+								"{{cprefix}}",
+								"countries",
+								"search"
+							],
+							"query": [
+								{
+									"key": "q",
+									"value": "turkm"
+								},
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "per_page",
+									"value": "10"
+								}
+							]
+						},
+						"description": "Search countries by name"
+					},
+					"response": [
+						{
+							"name": "Search Countries",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{chost}}/{{cprefix}}/countries/search?q=turkm&page=1&per_page=10",
+									"host": [
+										"{{chost}}"
+									],
+									"path": [
+										"{{cprefix}}",
+										"countries",
+										"search"
+									],
+									"query": [
+										{
+											"key": "q",
+											"value": "turkm"
+										},
+										{
+											"key": "page",
+											"value": "1"
+										},
+										{
+											"key": "per_page",
+											"value": "10"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 23 Jun 2025 09:42:01 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1252"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Country search results\",\n    \"success\": true,\n    \"data\": {\n        \"total\": 1,\n        \"page\": 1,\n        \"per_page\": 10,\n        \"data\": [\n            {\n                \"id\": 226,\n                \"name\": \"Turkmenistan\",\n                \"iso3\": \"TKM\",\n                \"numeric_code\": \"795\",\n                \"iso2\": \"TM\",\n                \"phonecode\": \"993\",\n                \"capital\": \"Ashgabat\",\n                \"currency\": \"TMT\",\n                \"currency_name\": \"Turkmenistan manat\",\n                \"currency_symbol\": \"T\",\n                \"tld\": \".tm\",\n                \"native\": \"Türkmenistan\",\n                \"region\": \"Asia\",\n                \"region_id\": 3,\n                \"subregion\": \"Central Asia\",\n                \"subregion_id\": 10,\n                \"nationality\": \"Turkmen\",\n                \"timezones\": \"[{\\\"zoneName\\\":\\\"Asia/Ashgabat\\\",\\\"gmtOffset\\\":18000,\\\"gmtOffsetName\\\":\\\"UTC+05:00\\\",\\\"abbreviation\\\":\\\"TMT\\\",\\\"tzName\\\":\\\"Turkmenistan Time\\\"}]\",\n                \"translations\": \"{\\\"ko\\\":\\\"투르크메니스탄\\\",\\\"pt-BR\\\":\\\"Turcomenistão\\\",\\\"pt\\\":\\\"Turquemenistão\\\",\\\"nl\\\":\\\"Turkmenistan\\\",\\\"hr\\\":\\\"Turkmenistan\\\",\\\"fa\\\":\\\"ترکمنستان\\\",\\\"de\\\":\\\"Turkmenistan\\\",\\\"es\\\":\\\"Turkmenistán\\\",\\\"fr\\\":\\\"Turkménistan\\\",\\\"ja\\\":\\\"トルクメニスタン\\\",\\\"it\\\":\\\"Turkmenistan\\\",\\\"zh-CN\\\":\\\"土库曼斯坦\\\",\\\"tr\\\":\\\"Türkmenistan\\\",\\\"ru\\\":\\\"Туркменистан\\\",\\\"uk\\\":\\\"Туркменістан\\\",\\\"pl\\\":\\\"Turkmenistan\\\"}\",\n                \"latitude\": 40,\n                \"longitude\": 60,\n                \"emoji\": \"🇹🇲\",\n                \"emojiU\": \"U+1F1F9 U+1F1F2\",\n                \"created_at\": \"2018-07-21T12:41:03Z\",\n                \"updated_at\": \"2023-08-10T00:53:19Z\",\n                \"flag\": 1,\n                \"wikiDataId\": \"Q874\"\n            }\n        ]\n    },\n    \"errorMsg\": \"\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Get Country By ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{chost}}/{{cprefix}}/countries/226",
+							"host": [
+								"{{chost}}"
+							],
+							"path": [
+								"{{cprefix}}",
+								"countries",
+								"226"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get Country By ID",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{chost}}/{{cprefix}}/countries/226",
+									"host": [
+										"{{chost}}"
+									],
+									"path": [
+										"{{cprefix}}",
+										"countries",
+										"226"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 23 Jun 2025 09:42:09 GMT"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Country details\",\n    \"success\": true,\n    \"data\": {\n        \"id\": 226,\n        \"name\": \"Turkmenistan\",\n        \"iso3\": \"TKM\",\n        \"numeric_code\": \"795\",\n        \"iso2\": \"TM\",\n        \"phonecode\": \"993\",\n        \"capital\": \"Ashgabat\",\n        \"currency\": \"TMT\",\n        \"currency_name\": \"Turkmenistan manat\",\n        \"currency_symbol\": \"T\",\n        \"tld\": \".tm\",\n        \"native\": \"Türkmenistan\",\n        \"region\": \"Asia\",\n        \"region_id\": 3,\n        \"subregion\": \"Central Asia\",\n        \"subregion_id\": 10,\n        \"nationality\": \"Turkmen\",\n        \"timezones\": \"[{\\\"zoneName\\\":\\\"Asia/Ashgabat\\\",\\\"gmtOffset\\\":18000,\\\"gmtOffsetName\\\":\\\"UTC+05:00\\\",\\\"abbreviation\\\":\\\"TMT\\\",\\\"tzName\\\":\\\"Turkmenistan Time\\\"}]\",\n        \"translations\": \"{\\\"ko\\\":\\\"투르크메니스탄\\\",\\\"pt-BR\\\":\\\"Turcomenistão\\\",\\\"pt\\\":\\\"Turquemenistão\\\",\\\"nl\\\":\\\"Turkmenistan\\\",\\\"hr\\\":\\\"Turkmenistan\\\",\\\"fa\\\":\\\"ترکمنستان\\\",\\\"de\\\":\\\"Turkmenistan\\\",\\\"es\\\":\\\"Turkmenistán\\\",\\\"fr\\\":\\\"Turkménistan\\\",\\\"ja\\\":\\\"トルクメニスタン\\\",\\\"it\\\":\\\"Turkmenistan\\\",\\\"zh-CN\\\":\\\"土库曼斯坦\\\",\\\"tr\\\":\\\"Türkmenistan\\\",\\\"ru\\\":\\\"Туркменистан\\\",\\\"uk\\\":\\\"Туркменістан\\\",\\\"pl\\\":\\\"Turkmenistan\\\"}\",\n        \"latitude\": 40,\n        \"longitude\": 60,\n        \"emoji\": \"🇹🇲\",\n        \"emojiU\": \"U+1F1F9 U+1F1F2\",\n        \"created_at\": \"2018-07-21T12:41:03Z\",\n        \"updated_at\": \"2023-08-10T00:53:19Z\",\n        \"flag\": 1,\n        \"wikiDataId\": \"Q874\",\n        \"cities\": [\n            {\n                \"id\": 106880,\n                \"name\": \"Abadan\",\n                \"state_id\": 3374,\n                \"state_code\": \"A\",\n                \"country_id\": 226,\n                \"country_code\": \"TM\",\n                \"latitude\": 38.05415,\n                \"longitude\": 58.19721,\n                \"created_at\": null,\n                \"updated_at\": null,\n                \"flag\": 1,\n                \"wikiDataId\": \"Q304522\"\n            },\n            {\n                \"id\": 106881,\n                \"name\": \"Akdepe\",\n                \"state_id\": 3373,\n                \"state_code\": \"D\",\n                \"country_id\": 226,\n                \"country_code\": \"TM\",\n                \"latitude\": 42.05513,\n                \"longitude\": 59.37877,\n                \"created_at\": null,\n                \"updated_at\": null,\n                \"flag\": 1,\n                \"wikiDataId\": \"Q2450285\"\n            },\n            {\n                \"id\": 106882,\n                \"name\": \"Annau\",\n                \"state_id\": 3374,\n                \"state_code\": \"A\",\n                \"country_id\": 226,\n                \"country_code\": \"TM\",\n                \"latitude\": 37.88754,\n                \"longitude\": 58.51596,\n                \"created_at\": null,\n                \"updated_at\": null,\n                \"flag\": 1,\n                \"wikiDataId\": \"Q844968\"\n            },\n            {\n                \"id\": 106883,\n                \"name\": \"Arçabil\",\n                \"state_id\": 3374,\n                \"state_code\": \"A\",\n                \"country_id\": 226,\n                \"country_code\": \"TM\",\n                \"latitude\": 37.915,\n                \"longitude\": 58.08987,\n                \"created_at\": null,\n                \"updated_at\": null,\n                \"flag\": 1,\n                \"wikiDataId\": \"Q49344649\"\n            },\n            {\n                \"id\": 106884,\n                \"name\": \"Ashgabat\",\n                \"state_id\": 3371,\n                \"state_code\": \"S\",\n                \"country_id\": 226,\n                \"country_code\": \"TM\",\n                \"latitude\": 37.95,\n                \"longitude\": 58.38333,\n                \"created_at\": null,\n                \"updated_at\": null,\n                \"flag\": 1,\n                \"wikiDataId\": \"Q23438\"\n            },\n            {\n                \"id\": 106885,\n                \"name\": \"Atamyrat\",\n                \"state_id\": 3370,\n                \"state_code\": \"L\",\n                \"country_id\": 226,\n                \"country_code\": \"TM\",\n                \"latitude\": 37.83573,\n                \"longitude\": 65.21058,\n                \"created_at\": null,\n                \"updated_at\": null,\n                \"flag\": 1,\n                \"wikiDataId\": \"Q2357934\"\n            },\n            {\n                \"id\": 106886,\n                \"name\": \"Baharly\",\n                \"state_id\": 3374,\n                \"state_code\": \"A\",\n                \"country_id\": 226,\n                \"country_code\": \"TM\",\n                \"latitude\": 38.43624,\n                \"longitude\": 57.43158,\n                \"created_at\": null,\n                \"updated_at\": null,\n                \"flag\": 1,\n                \"wikiDataId\": \"Q2980062\"\n            },\n            {\n                \"id\": 106887,\n                \"name\": \"Balkanabat\",\n                \"state_id\": 3372,\n                \"state_code\": \"B\",\n                \"country_id\": 226,\n                \"country_code\": \"TM\",\n                \"latitude\": 39.51075,\n                \"longitude\": 54.36713,\n                \"created_at\": null,\n                \"updated_at\": null,\n                \"flag\": 1,\n                \"wikiDataId\": \"Q199762\"\n            },\n            {\n                \"id\": 106888,\n                \"name\": \"Bayramaly\",\n                \"state_id\": 3369,\n                \"state_code\": \"M\",\n                \"country_id\": 226,\n                \"country_code\": \"TM\",\n                \"latitude\": 37.61852,\n                \"longitude\": 62.16715,\n                \"created_at\": null,\n                \"updated_at\": null,\n                \"flag\": 1,\n                \"wikiDataId\": \"Q812715\"\n            },\n            {\n                \"id\": 106889,\n                \"name\": \"Bereket\",\n                \"state_id\": 3372,\n                \"state_code\": \"B\",\n                \"country_id\": 226,\n                \"country_code\": \"TM\",\n                \"latitude\": 39.24463,\n                \"longitude\": 55.51536,\n                \"created_at\": null,\n                \"updated_at\": null,\n                \"flag\": 1,\n                \"wikiDataId\": \"Q2578541\"\n            },\n            {\n                \"id\": 106890,\n                \"name\": \"Boldumsaz\",\n                \"state_id\": 3373,\n                \"state_code\": \"D\",\n                \"country_id\": 226,\n                \"country_code\": \"TM\",\n                \"latitude\": 42.12824,\n                \"longitude\": 59.67101,\n                \"created_at\": null,\n                \"updated_at\": null,\n                \"flag\": 1,\n                \"wikiDataId\": \"Q938252\"\n            },\n            {\n                \"id\": 106891,\n                \"name\": \"Daşoguz\",\n                \"state_id\": 3373,\n                \"state_code\": \"D\",\n                \"country_id\": 226,\n                \"country_code\": \"TM\",\n                \"latitude\": 41.83625,\n                \"longitude\": 59.96661,\n                \"created_at\": null,\n                \"updated_at\": null,\n                \"flag\": 1,\n                \"wikiDataId\": \"Q487672\"\n            },\n            {\n                \"id\": 106892,\n                \"name\": \"Farap\",\n                \"state_id\": 3370,\n                \"state_code\": \"L\",\n                \"country_id\": 226,\n                \"country_code\": \"TM\",\n                \"latitude\": 39.17037,\n                \"longitude\": 63.61165,\n                \"created_at\": null,\n                \"updated_at\": null,\n                \"flag\": 1,\n                \"wikiDataId\": \"Q2587941\"\n            },\n            {\n                \"id\": 106893,\n                \"name\": \"Gazojak\",\n                \"state_id\": 3370,\n                \"state_code\": \"L\",\n                \"country_id\": 226,\n                \"country_code\": \"TM\",\n                \"latitude\": 41.18746,\n                \"longitude\": 61.4036,\n                \"created_at\": null,\n                \"updated_at\": null,\n                \"flag\": 1,\n                \"wikiDataId\": \"Q4131635\"\n            },\n            {\n                \"id\": 106894,\n                \"name\": \"Gowurdak\",\n                \"state_id\": 3370,\n                \"state_code\": \"L\",\n                \"country_id\": 226,\n                \"country_code\": \"TM\",\n                \"latitude\": 37.81244,\n                \"longitude\": 66.04656,\n                \"created_at\": null,\n                \"updated_at\": null,\n                \"flag\": 1,\n                \"wikiDataId\": \"Q1023619\"\n            },\n            {\n                \"id\": 106895,\n                \"name\": \"Gumdag\",\n                \"state_id\": 3372,\n                \"state_code\": \"B\",\n                \"country_id\": 226,\n                \"country_code\": \"TM\",\n                \"latitude\": 39.20611,\n                \"longitude\": 54.59056,\n                \"created_at\": null,\n                \"updated_at\": null,\n                \"flag\": 1,\n                \"wikiDataId\": \"Q2661229\"\n            },\n            {\n                \"id\": 106896,\n                \"name\": \"Kaka\",\n                \"state_id\": 3374,\n                \"state_code\": \"A\",\n                \"country_id\": 226,\n                \"country_code\": \"TM\",\n                \"latitude\": 37.34821,\n                \"longitude\": 59.61431,\n                \"created_at\": null,\n                \"updated_at\": null,\n                \"flag\": 1,\n                \"wikiDataId\": \"Q782190\"\n            },\n            {\n                \"id\": 106897,\n                \"name\": \"Köneürgench\",\n                \"state_id\": 3373,\n                \"state_code\": \"D\",\n                \"country_id\": 226,\n                \"country_code\": \"TM\",\n                \"latitude\": 42.32773,\n                \"longitude\": 59.15442,\n                \"created_at\": null,\n                \"updated_at\": null,\n                \"flag\": 1,\n                \"wikiDataId\": \"Q48472\"\n            },\n            {\n                \"id\": 106898,\n                \"name\": \"Magtymguly\",\n                \"state_id\": 3372,\n                \"state_code\": \"B\",\n                \"country_id\": 226,\n                \"country_code\": \"TM\",\n                \"latitude\": 38.43749,\n                \"longitude\": 56.28081,\n                \"created_at\": null,\n                \"updated_at\": null,\n                \"flag\": 1,\n                \"wikiDataId\": \"Q4139824\"\n            },\n            {\n                \"id\": 106899,\n                \"name\": \"Mary\",\n                \"state_id\": 3369,\n                \"state_code\": \"M\",\n                \"country_id\": 226,\n                \"country_code\": \"TM\",\n                \"latitude\": 37.59378,\n                \"longitude\": 61.83031,\n                \"created_at\": null,\n                \"updated_at\": null,\n                \"flag\": 1,\n                \"wikiDataId\": \"Q5713\"\n            },\n            {\n                \"id\": 106900,\n                \"name\": \"Saýat\",\n                \"state_id\": 3370,\n                \"state_code\": \"L\",\n                \"country_id\": 226,\n                \"country_code\": \"TM\",\n                \"latitude\": 38.78393,\n                \"longitude\": 63.88035,\n                \"created_at\": null,\n                \"updated_at\": null,\n                \"flag\": 1,\n                \"wikiDataId\": \"Q4409652\"\n            },\n            {\n                \"id\": 106901,\n                \"name\": \"Serdar\",\n                \"state_id\": 3372,\n                \"state_code\": \"B\",\n                \"country_id\": 226,\n                \"country_code\": \"TM\",\n                \"latitude\": 38.97644,\n                \"longitude\": 56.27575,\n                \"created_at\": null,\n                \"updated_at\": null,\n                \"flag\": 1,\n                \"wikiDataId\": \"Q1015618\"\n            },\n            {\n                \"id\": 106902,\n                \"name\": \"Serhetabat\",\n                \"state_id\": 3369,\n                \"state_code\": \"M\",\n                \"country_id\": 226,\n                \"country_code\": \"TM\",\n                \"latitude\": 35.27992,\n                \"longitude\": 62.34383,\n                \"created_at\": null,\n                \"updated_at\": null,\n                \"flag\": 1,\n                \"wikiDataId\": \"Q864655\"\n            },\n            {\n                \"id\": 106903,\n                \"name\": \"Seydi\",\n                \"state_id\": 3369,\n                \"state_code\": \"M\",\n                \"country_id\": 226,\n                \"country_code\": \"TM\",\n                \"latitude\": 39.4816,\n                \"longitude\": 62.91374,\n                \"created_at\": null,\n                \"updated_at\": null,\n                \"flag\": 1,\n                \"wikiDataId\": \"Q2660326\"\n            },\n            {\n                \"id\": 106904,\n                \"name\": \"Tagta\",\n                \"state_id\": 3373,\n                \"state_code\": \"D\",\n                \"country_id\": 226,\n                \"country_code\": \"TM\",\n                \"latitude\": 41.65041,\n                \"longitude\": 59.9164,\n                \"created_at\": null,\n                \"updated_at\": null,\n                \"flag\": 1,\n                \"wikiDataId\": \"Q2977840\"\n            },\n            {\n                \"id\": 106905,\n                \"name\": \"Tejen\",\n                \"state_id\": 3374,\n                \"state_code\": \"A\",\n                \"country_id\": 226,\n                \"country_code\": \"TM\",\n                \"latitude\": 37.38338,\n                \"longitude\": 60.50545,\n                \"created_at\": null,\n                \"updated_at\": null,\n                \"flag\": 1,\n                \"wikiDataId\": \"Q1983850\"\n            },\n            {\n                \"id\": 106906,\n                \"name\": \"Türkmenabat\",\n                \"state_id\": 3370,\n                \"state_code\": \"L\",\n                \"country_id\": 226,\n                \"country_code\": \"TM\",\n                \"latitude\": 39.07328,\n                \"longitude\": 63.57861,\n                \"created_at\": null,\n                \"updated_at\": null,\n                \"flag\": 1,\n                \"wikiDataId\": \"Q487684\"\n            },\n            {\n                \"id\": 106907,\n                \"name\": \"Türkmenbaşy\",\n                \"state_id\": 3372,\n                \"state_code\": \"B\",\n                \"country_id\": 226,\n                \"country_code\": \"TM\",\n                \"latitude\": 40.02216,\n                \"longitude\": 52.95517,\n                \"created_at\": null,\n                \"updated_at\": null,\n                \"flag\": 1,\n                \"wikiDataId\": \"Q488987\"\n            },\n            {\n                \"id\": 106908,\n                \"name\": \"Yolöten\",\n                \"state_id\": 3369,\n                \"state_code\": \"M\",\n                \"country_id\": 226,\n                \"country_code\": \"TM\",\n                \"latitude\": 37.29886,\n                \"longitude\": 62.35975,\n                \"created_at\": null,\n                \"updated_at\": null,\n                \"flag\": 1,\n                \"wikiDataId\": \"Q2985985\"\n            },\n            {\n                \"id\": 106909,\n                \"name\": \"Yylanly\",\n                \"state_id\": 3373,\n                \"state_code\": \"D\",\n                \"country_id\": 226,\n                \"country_code\": \"TM\",\n                \"latitude\": 41.83333,\n                \"longitude\": 59.65,\n                \"created_at\": null,\n                \"updated_at\": null,\n                \"flag\": 1,\n                \"wikiDataId\": \"Q4152258\"\n            }\n        ]\n    },\n    \"errorMsg\": \"\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Create Country",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"Test Country\",\n  \"iso3\": \"TST\",\n  \"numeric_code\": \"999\",\n  \"iso2\": \"TS\",\n  \"phonecode\": \"+999\",\n  \"capital\": \"Test Capital\",\n  \"currency\": \"TST\",\n  \"currency_name\": \"Test Currency\",\n  \"currency_symbol\": \"₹\",\n  \"tld\": \".test\",\n  \"native\": \"Test Native\",\n  \"region\": \"Test Region\",\n  \"region_id\": 1,\n  \"subregion\": \"Test Subregion\",\n  \"subregion_id\": 1,\n  \"nationality\": \"Test Nationality\",\n  \"timezones\": \"[{\\\"zoneName\\\":\\\"UTC+05:30\\\",\\\"gmtOffset\\\":19800,\\\"gmtOffsetName\\\":\\\"UTC+05:30\\\",\\\"abbreviation\\\":\\\"IST\\\",\\\"tzName\\\":\\\"Indian Standard Time\\\"}]\",\n  \"translations\": \"{\\\"kr\\\":\\\"테스트\\\",\\\"pt-BR\\\":\\\"Teste\\\",\\\"pt\\\":\\\"Teste\\\",\\\"nl\\\":\\\"Test\\\",\\\"hr\\\":\\\"Test\\\",\\\"fa\\\":\\\"تست\\\"}\",\n  \"latitude\": 20.593684,\n  \"longitude\": 78.96288,\n  \"emoji\": \"🏳️\",\n  \"emojiU\": \"U+1F3F3 U+FE0F\",\n  \"wikiDataId\": \"Q12345\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{chost}}/{{cprefix}}/countries",
+							"host": [
+								"{{chost}}"
+							],
+							"path": [
+								"{{cprefix}}",
+								"countries"
+							]
+						},
+						"description": "Create a new country with all available fields"
+					},
+					"response": [
+						{
+							"name": "Create Country",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"name\": \"Test Country\",\n  \"iso3\": \"TST\",\n  \"numeric_code\": \"999\",\n  \"iso2\": \"TS\",\n  \"phonecode\": \"+999\",\n  \"capital\": \"Test Capital\",\n  \"currency\": \"TST\",\n  \"currency_name\": \"Test Currency\",\n  \"currency_symbol\": \"₹\",\n  \"tld\": \".test\",\n  \"native\": \"Test Native\",\n  \"region\": \"Test Region\",\n  \"region_id\": 1,\n  \"subregion\": \"Test Subregion\",\n  \"subregion_id\": 1,\n  \"nationality\": \"Test Nationality\",\n  \"timezones\": \"[{\\\"zoneName\\\":\\\"UTC+05:30\\\",\\\"gmtOffset\\\":19800,\\\"gmtOffsetName\\\":\\\"UTC+05:30\\\",\\\"abbreviation\\\":\\\"IST\\\",\\\"tzName\\\":\\\"Indian Standard Time\\\"}]\",\n  \"translations\": \"{\\\"kr\\\":\\\"테스트\\\",\\\"pt-BR\\\":\\\"Teste\\\",\\\"pt\\\":\\\"Teste\\\",\\\"nl\\\":\\\"Test\\\",\\\"hr\\\":\\\"Test\\\",\\\"fa\\\":\\\"تست\\\"}\",\n  \"latitude\": 20.593684,\n  \"longitude\": 78.96288,\n  \"emoji\": \"🏳️\",\n  \"emojiU\": \"U+1F3F3 U+FE0F\",\n  \"wikiDataId\": \"Q12345\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{chost}}/{{cprefix}}/countries",
+									"host": [
+										"{{chost}}"
+									],
+									"path": [
+										"{{cprefix}}",
+										"countries"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 23 Jun 2025 11:29:02 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "178"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Country created successfully\",\n    \"success\": true,\n    \"data\": {\n        \"id\": 1750678142160446022,\n        \"name\": \"Test Country\",\n        \"created_at\": \"2025-06-23T16:29:02.160445636+05:00\"\n    },\n    \"errorMsg\": \"\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Create Country (Minimal)",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"Minimal Country\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{chost}}/{{cprefix}}/countries",
+							"host": [
+								"{{chost}}"
+							],
+							"path": [
+								"{{cprefix}}",
+								"countries"
+							]
+						},
+						"description": "Create a country with only the required name field"
+					},
+					"response": []
+				},
+				{
+					"name": "Update Country",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"Updated Test Country\",\n  \"iso3\": \"UTS\",\n  \"numeric_code\": \"998\",\n  \"iso2\": \"UT\",\n  \"phonecode\": \"+998\",\n  \"capital\": \"Updated Capital\",\n  \"currency\": \"UTS\",\n  \"currency_name\": \"Updated Currency\",\n  \"currency_symbol\": \"$\",\n  \"tld\": \".updated\",\n  \"native\": \"Updated Native\",\n  \"region\": \"Updated Region\",\n  \"region_id\": 2,\n  \"subregion\": \"Updated Subregion\",\n  \"subregion_id\": 2,\n  \"nationality\": \"Updated Nationality\",\n  \"timezones\": \"[{\\\"zoneName\\\":\\\"UTC+06:00\\\",\\\"gmtOffset\\\":21600,\\\"gmtOffsetName\\\":\\\"UTC+06:00\\\",\\\"abbreviation\\\":\\\"BST\\\",\\\"tzName\\\":\\\"Bangladesh Standard Time\\\"}]\",\n  \"translations\": \"{\\\"kr\\\":\\\"업데이트\\\",\\\"pt-BR\\\":\\\"Atualizado\\\",\\\"pt\\\":\\\"Atualizado\\\",\\\"nl\\\":\\\"Bijgewerkt\\\",\\\"hr\\\":\\\"Ažurirano\\\",\\\"fa\\\":\\\"به روز شده\\\"}\",\n  \"latitude\": 23.684994,\n  \"longitude\": 90.356331,\n  \"emoji\": \"🏴\",\n  \"emojiU\": \"U+1F3F4\",\n  \"wikiDataId\": \"Q54321\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{chost}}/{{cprefix}}/countries/{{country_id}}",
+							"host": [
+								"{{chost}}"
+							],
+							"path": [
+								"{{cprefix}}",
+								"countries",
+								"{{country_id}}"
+							]
+						},
+						"description": "Update an existing country. Replace {{country_id}} with actual country ID"
+					},
+					"response": [
+						{
+							"name": "Update Country",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"name\": \"Updated Test Country\",\n  \"iso3\": \"UTS\",\n  \"numeric_code\": \"998\",\n  \"iso2\": \"UT\",\n  \"phonecode\": \"+998\",\n  \"capital\": \"Updated Capital\",\n  \"currency\": \"UTS\",\n  \"currency_name\": \"Updated Currency\",\n  \"currency_symbol\": \"$\",\n  \"tld\": \".updated\",\n  \"native\": \"Updated Native\",\n  \"region\": \"Updated Region\",\n  \"region_id\": 2,\n  \"subregion\": \"Updated Subregion\",\n  \"subregion_id\": 2,\n  \"nationality\": \"Updated Nationality\",\n  \"timezones\": \"[{\\\"zoneName\\\":\\\"UTC+06:00\\\",\\\"gmtOffset\\\":21600,\\\"gmtOffsetName\\\":\\\"UTC+06:00\\\",\\\"abbreviation\\\":\\\"BST\\\",\\\"tzName\\\":\\\"Bangladesh Standard Time\\\"}]\",\n  \"translations\": \"{\\\"kr\\\":\\\"업데이트\\\",\\\"pt-BR\\\":\\\"Atualizado\\\",\\\"pt\\\":\\\"Atualizado\\\",\\\"nl\\\":\\\"Bijgewerkt\\\",\\\"hr\\\":\\\"Ažurirano\\\",\\\"fa\\\":\\\"به روز شده\\\"}\",\n  \"latitude\": 23.684994,\n  \"longitude\": 90.356331,\n  \"emoji\": \"🏴\",\n  \"emojiU\": \"U+1F3F4\",\n  \"wikiDataId\": \"Q54321\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{chost}}/{{cprefix}}/countries/{{country_id}}",
+									"host": [
+										"{{chost}}"
+									],
+									"path": [
+										"{{cprefix}}",
+										"countries",
+										"{{country_id}}"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 23 Jun 2025 09:41:07 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "168"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Country updated successfully\",\n    \"success\": true,\n    \"data\": {\n        \"id\": 1,\n        \"name\": \"Updated Test Country\",\n        \"updated_at\": \"2025-06-23T14:41:07.592613072+05:00\"\n    },\n    \"errorMsg\": \"\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Update Country (Minimal)",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"Updated Minimal Country\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{chost}}/{{cprefix}}/countries/{{country_id}}",
+							"host": [
+								"{{chost}}"
+							],
+							"path": [
+								"{{cprefix}}",
+								"countries",
+								"{{country_id}}"
+							]
+						},
+						"description": "Update a country with only the required name field"
+					},
+					"response": [
+						{
+							"name": "Update Country (Minimal)",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"name\": \"Updated Minimal Country\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{chost}}/{{cprefix}}/countries/{{country_id}}",
+									"host": [
+										"{{chost}}"
+									],
+									"path": [
+										"{{cprefix}}",
+										"countries",
+										"{{country_id}}"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 23 Jun 2025 09:41:24 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "171"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Country updated successfully\",\n    \"success\": true,\n    \"data\": {\n        \"id\": 1,\n        \"name\": \"Updated Minimal Country\",\n        \"updated_at\": \"2025-06-23T14:41:24.348824402+05:00\"\n    },\n    \"errorMsg\": \"\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Delete Country",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{chost}}/{{cprefix}}/countries/{{country_id}}",
+							"host": [
+								"{{chost}}"
+							],
+							"path": [
+								"{{cprefix}}",
+								"countries",
+								"{{country_id}}"
+							]
+						},
+						"description": "Soft delete a country (sets flag=0). Replace {{country_id}} with actual country ID"
+					},
+					"response": [
+						{
+							"name": "Delete Country",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{chost}}/{{cprefix}}/countries/{{country_id}}",
+									"host": [
+										"{{chost}}"
+									],
+									"path": [
+										"{{cprefix}}",
+										"countries",
+										"{{country_id}}"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 23 Jun 2025 09:41:41 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "83"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Country deleted successfully\",\n    \"success\": true,\n    \"data\": null,\n    \"errorMsg\": \"\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Cities",
+			"item": [
+				{
+					"name": "Get Cities List",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{chost}}/{{cprefix}}/cities?page=1&per_page=10",
+							"host": [
+								"{{chost}}"
+							],
+							"path": [
+								"{{cprefix}}",
+								"cities"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "per_page",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get Cities List",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{chost}}/{{cprefix}}/cities?page=1&per_page=10",
+									"host": [
+										"{{chost}}"
+									],
+									"path": [
+										"{{cprefix}}",
+										"cities"
+									],
+									"query": [
+										{
+											"key": "page",
+											"value": "1"
+										},
+										{
+											"key": "per_page",
+											"value": "10"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 23 Jun 2025 09:42:22 GMT"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"City list\",\n    \"success\": true,\n    \"data\": {\n        \"total\": 150783,\n        \"page\": 1,\n        \"per_page\": 10,\n        \"data\": [\n            {\n                \"id\": 68005,\n                \"name\": \"10 de Abril\",\n                \"state_id\": 3459,\n                \"state_code\": \"GRO\",\n                \"country_id\": 142,\n                \"country_code\": \"MX\",\n                \"latitude\": 16.82917,\n                \"longitude\": -99.74083,\n                \"created_at\": \"2019-10-05T23:08:26Z\",\n                \"updated_at\": \"2019-10-05T23:08:26Z\",\n                \"flag\": 1,\n                \"wikiDataId\": \"Q20128878\"\n            },\n            {\n                \"id\": 149220,\n                \"name\": \"10th of Ramadan\",\n                \"state_id\": 5067,\n                \"state_code\": \"SHR\",\n                \"country_id\": 65,\n                \"country_code\": \"EG\",\n                \"latitude\": 30.2993939,\n                \"longitude\": 31.6141789,\n                \"created_at\": \"2022-01-16T10:39:45Z\",\n                \"updated_at\": \"2022-01-16T16:48:12Z\",\n                \"flag\": 1,\n                \"wikiDataId\": \"Q337539\"\n            },\n            {\n                \"id\": 62289,\n                \"name\": \"12th Street\",\n                \"state_id\": 3742,\n                \"state_code\": \"10\",\n                \"country_id\": 108,\n                \"country_code\": \"JM\",\n                \"latitude\": 18.21097,\n                \"longitude\": -78.13603,\n                \"created_at\": \"2019-10-05T23:07:27Z\",\n                \"updated_at\": \"2019-10-05T23:07:27Z\",\n                \"flag\": 1,\n                \"wikiDataId\": \"Q18436859\"\n            },\n            {\n                \"id\": 68006,\n                \"name\": \"18 de Marzo\",\n                \"state_id\": 3476,\n                \"state_code\": \"PUE\",\n                \"country_id\": 142,\n                \"country_code\": \"MX\",\n                \"latitude\": 18.96889,\n                \"longitude\": -98.16028,\n                \"created_at\": \"2019-10-05T23:08:26Z\",\n                \"updated_at\": \"2019-10-05T23:08:26Z\",\n                \"flag\": 1,\n                \"wikiDataId\": \"Q20228734\"\n            },\n            {\n                \"id\": 89871,\n                \"name\": \"1 Decembrie\",\n                \"state_id\": 4725,\n                \"state_code\": \"IF\",\n                \"country_id\": 181,\n                \"country_code\": \"RO\",\n                \"latitude\": 44.29083,\n                \"longitude\": 26.05806,\n                \"created_at\": \"2019-10-05T23:14:38Z\",\n                \"updated_at\": \"2019-10-05T23:14:38Z\",\n                \"flag\": 1,\n                \"wikiDataId\": \"Q12719730\"\n            },\n            {\n                \"id\": 68007,\n                \"name\": \"1ra. Sección de Izapa\",\n                \"state_id\": 3451,\n                \"state_code\": \"CHP\",\n                \"country_id\": 142,\n                \"country_code\": \"MX\",\n                \"latitude\": 14.92083,\n                \"longitude\": -92.17083,\n                \"created_at\": \"2019-10-05T23:08:26Z\",\n                \"updated_at\": \"2020-05-01T17:22:59Z\",\n                \"flag\": 1,\n                \"wikiDataId\": \"Q27769260\"\n            },\n            {\n                \"id\": 89872,\n                \"name\": \"23 August\",\n                \"state_id\": 4737,\n                \"state_code\": \"CT\",\n                \"country_id\": 181,\n                \"country_code\": \"RO\",\n                \"latitude\": 43.91667,\n                \"longitude\": 28.58333,\n                \"created_at\": \"2019-10-05T23:14:38Z\",\n                \"updated_at\": \"2019-10-05T23:14:38Z\",\n                \"flag\": 1,\n                \"wikiDataId\": \"Q5060164\"\n            },\n            {\n                \"id\": 129771,\n                \"name\": \"25 de Agosto\",\n                \"state_id\": 3217,\n                \"state_code\": \"FD\",\n                \"country_id\": 235,\n                \"country_code\": \"UY\",\n                \"latitude\": -34.41167,\n                \"longitude\": -56.40222,\n                \"created_at\": \"2019-10-05T23:37:12Z\",\n                \"updated_at\": \"2019-10-05T23:37:12Z\",\n                \"flag\": 1,\n                \"wikiDataId\": \"Q218465\"\n            },\n            {\n                \"id\": 129772,\n                \"name\": \"25 de Mayo\",\n                \"state_id\": 3217,\n                \"state_code\": \"FD\",\n                \"country_id\": 235,\n                \"country_code\": \"UY\",\n                \"latitude\": -34.18917,\n                \"longitude\": -56.33944,\n                \"created_at\": \"2019-10-05T23:37:12Z\",\n                \"updated_at\": \"2019-10-05T23:37:12Z\",\n                \"flag\": 1,\n                \"wikiDataId\": \"Q218472\"\n            },\n            {\n                \"id\": 637,\n                \"name\": \"28 de Noviembre\",\n                \"state_id\": 3649,\n                \"state_code\": \"Z\",\n                \"country_id\": 11,\n                \"country_code\": \"AR\",\n                \"latitude\": -51.5839,\n                \"longitude\": -72.21382,\n                \"created_at\": \"2019-10-05T22:28:12Z\",\n                \"updated_at\": \"2019-10-05T22:28:12Z\",\n                \"flag\": 1,\n                \"wikiDataId\": \"Q1533589\"\n            }\n        ]\n    },\n    \"errorMsg\": \"\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Search Cities",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{chost}}/{{cprefix}}/cities/search?q=Ashgaba&page=1&per_page=99",
+							"host": [
+								"{{chost}}"
+							],
+							"path": [
+								"{{cprefix}}",
+								"cities",
+								"search"
+							],
+							"query": [
+								{
+									"key": "q",
+									"value": "Ashgaba"
+								},
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "per_page",
+									"value": "99"
+								}
+							]
+						},
+						"description": "Search cities by name"
+					},
+					"response": [
+						{
+							"name": "Search Cities",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{chost}}/{{cprefix}}/cities/search?q=Ashgaba&page=1&per_page=99",
+									"host": [
+										"{{chost}}"
+									],
+									"path": [
+										"{{cprefix}}",
+										"cities",
+										"search"
+									],
+									"query": [
+										{
+											"key": "q",
+											"value": "Ashgaba"
+										},
+										{
+											"key": "page",
+											"value": "1"
+										},
+										{
+											"key": "per_page",
+											"value": "99"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 23 Jun 2025 09:42:30 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "386"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"City search results\",\n    \"success\": true,\n    \"data\": {\n        \"total\": 1,\n        \"page\": 1,\n        \"per_page\": 99,\n        \"data\": [\n            {\n                \"id\": 106884,\n                \"name\": \"Ashgabat\",\n                \"state_id\": 3371,\n                \"state_code\": \"S\",\n                \"country_id\": 226,\n                \"country_code\": \"TM\",\n                \"country_name\": \"Turkmenistan\",\n                \"latitude\": 37.95,\n                \"longitude\": 58.38333,\n                \"created_at\": \"2019-10-05T23:31:09Z\",\n                \"updated_at\": \"2019-10-05T23:31:09Z\",\n                \"flag\": 1,\n                \"wikiDataId\": \"Q23438\"\n            }\n        ]\n    },\n    \"errorMsg\": \"\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Create City",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"Test City\",\n  \"state_id\": 1,\n  \"state_code\": \"TS\",\n  \"country_id\": 1,\n  \"country_code\": \"TS\",\n  \"latitude\": 28.7041,\n  \"longitude\": 77.1025,\n  \"wikiDataId\": \"Q12345\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{chost}}/{{cprefix}}/cities",
+							"host": [
+								"{{chost}}"
+							],
+							"path": [
+								"{{cprefix}}",
+								"cities"
+							]
+						},
+						"description": "Create a new city with all available fields. Make sure country_id exists in countries table"
+					},
+					"response": [
+						{
+							"name": "Create City",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"name\": \"Test City\",\n  \"state_id\": 1,\n  \"state_code\": \"TS\",\n  \"country_id\": 1,\n  \"country_code\": \"TS\",\n  \"latitude\": 28.7041,\n  \"longitude\": 77.1025,\n  \"wikiDataId\": \"Q12345\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{chost}}/{{cprefix}}/cities",
+									"host": [
+										"{{chost}}"
+									],
+									"path": [
+										"{{cprefix}}",
+										"cities"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 23 Jun 2025 11:28:43 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "187"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"City created successfully\",\n    \"success\": true,\n    \"data\": {\n        \"id\": 1750678123964926526,\n        \"name\": \"Test City\",\n        \"country_id\": 1,\n        \"created_at\": \"2025-06-23T16:28:43.964926032+05:00\"\n    },\n    \"errorMsg\": \"\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Create City (Minimal)",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"Minimal City\",\n  \"country_id\": 1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{chost}}/{{cprefix}}/cities",
+							"host": [
+								"{{chost}}"
+							],
+							"path": [
+								"{{cprefix}}",
+								"cities"
+							]
+						},
+						"description": "Create a city with only required fields (name and country_id)"
+					},
+					"response": []
+				},
+				{
+					"name": "Update City",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"Updated Test City\",\n  \"state_id\": 2,\n  \"state_code\": \"UP\",\n  \"country_id\": 1,\n  \"country_code\": \"UT\",\n  \"latitude\": 19.0760,\n  \"longitude\": 72.8777,\n  \"wikiDataId\": \"Q54321\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{chost}}/{{cprefix}}/cities/{{city_id}}",
+							"host": [
+								"{{chost}}"
+							],
+							"path": [
+								"{{cprefix}}",
+								"cities",
+								"{{city_id}}"
+							]
+						},
+						"description": "Update an existing city. Replace {{city_id}} with actual city ID"
+					},
+					"response": [
+						{
+							"name": "Update City",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"name\": \"Updated Test City\",\n  \"state_id\": 2,\n  \"state_code\": \"UP\",\n  \"country_id\": 1,\n  \"country_code\": \"UT\",\n  \"latitude\": 19.0760,\n  \"longitude\": 72.8777,\n  \"wikiDataId\": \"Q54321\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{chost}}/{{cprefix}}/cities/{{city_id}}",
+									"host": [
+										"{{chost}}"
+									],
+									"path": [
+										"{{cprefix}}",
+										"cities",
+										"{{city_id}}"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 23 Jun 2025 09:54:35 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "177"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"City updated successfully\",\n    \"success\": true,\n    \"data\": {\n        \"id\": 1,\n        \"name\": \"Updated Test City\",\n        \"country_id\": 1,\n        \"updated_at\": \"2025-06-23T14:54:35.623615617+05:00\"\n    },\n    \"errorMsg\": \"\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Update City (Minimal)",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"Updated Minimal City\",\n  \"country_id\": 1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{chost}}/{{cprefix}}/cities/{{city_id}}",
+							"host": [
+								"{{chost}}"
+							],
+							"path": [
+								"{{cprefix}}",
+								"cities",
+								"{{city_id}}"
+							]
+						},
+						"description": "Update a city with only required fields"
+					},
+					"response": [
+						{
+							"name": "Update City (Minimal)",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"name\": \"Updated Minimal City\",\n  \"country_id\": 1\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{chost}}/{{cprefix}}/cities/{{city_id}}",
+									"host": [
+										"{{chost}}"
+									],
+									"path": [
+										"{{cprefix}}",
+										"cities",
+										"{{city_id}}"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 23 Jun 2025 09:54:43 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "180"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"City updated successfully\",\n    \"success\": true,\n    \"data\": {\n        \"id\": 1,\n        \"name\": \"Updated Minimal City\",\n        \"country_id\": 1,\n        \"updated_at\": \"2025-06-23T14:54:43.684061959+05:00\"\n    },\n    \"errorMsg\": \"\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Delete City",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{chost}}/{{cprefix}}/cities/{{city_id}}",
+							"host": [
+								"{{chost}}"
+							],
+							"path": [
+								"{{cprefix}}",
+								"cities",
+								"{{city_id}}"
+							]
+						},
+						"description": "Soft delete a city (sets flag=0). Replace {{city_id}} with actual city ID"
+					},
+					"response": [
+						{
+							"name": "Delete City",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{chost}}/{{cprefix}}/cities/{{city_id}}",
+									"host": [
+										"{{chost}}"
+									],
+									"path": [
+										"{{cprefix}}",
+										"cities",
+										"{{city_id}}"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 23 Jun 2025 09:54:54 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "80"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"City deleted successfully\",\n    \"success\": true,\n    \"data\": null,\n    \"errorMsg\": \"\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Test Scenarios",
+			"item": [
+				{
+					"name": "Create Country - Validation Error",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"iso3\": \"TST\",\n  \"capital\": \"Test Capital\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/{{prefix}}/countries",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"{{prefix}}",
+								"countries"
+							]
+						},
+						"description": "Test validation error - missing required 'name' field"
+					},
+					"response": []
+				},
+				{
+					"name": "Create City - Validation Error",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"Test City\",\n  \"state_code\": \"TS\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/{{prefix}}/cities",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"{{prefix}}",
+								"cities"
+							]
+						},
+						"description": "Test validation error - missing required 'country_id' field"
+					},
+					"response": []
+				},
+				{
+					"name": "Update Non-existent Country",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"Non-existent Country\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/{{prefix}}/countries/99999",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"{{prefix}}",
+								"countries",
+								"99999"
+							]
+						},
+						"description": "Test 404 error - trying to update non-existent country"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Non-existent City",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/{{prefix}}/cities/99999",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"{{prefix}}",
+								"cities",
+								"99999"
+							]
+						},
+						"description": "Test 404 error - trying to delete non-existent city"
+					},
+					"response": []
+				}
+			],
+			"description": "Test error scenarios and edge cases"
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "chost",
+			"value": "http://localhost:7887",
+			"type": "string"
+		},
+		{
+			"key": "cprefix",
+			"value": "country",
+			"type": "string"
+		},
+		{
+			"key": "country_id",
+			"value": "1",
+			"type": "default"
+		},
+		{
+			"key": "city_id",
+			"value": "1",
+			"type": "default"
+		}
+	]
+}

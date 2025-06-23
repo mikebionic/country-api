@@ -67,6 +67,25 @@ This repository includes a Postman collection to help you test and interact with
    - After importing, you can test each API endpoint directly from the collection.
    - Ensure the server is running, and make sure the `BASE_URL` is set correctly.
 
+
+### Summary of Endpoints
+Countries:
+POST   /api/countries        - Create country
+GET    /api/countries        - List countries (paginated)
+GET    /api/countries/:id    - Get country details
+PUT    /api/countries/:id    - Update country
+DELETE /api/countries/:id    - Delete country (soft)
+GET    /api/countries/search - Search countries
+
+Cities:
+POST   /api/cities           - Create city
+GET    /api/cities           - List cities (paginated)
+PUT    /api/cities/:id       - Update city
+DELETE /api/cities/:id       - Delete city (soft)
+GET    /api/cities/search    - Search cities
+
+---
+
 ### API Endpoints Overview
 
 Here are some key endpoints included in the Postman collection:
@@ -100,6 +119,54 @@ Here are some key endpoints included in the Postman collection:
     "city": "San Francisco"
   }
   ```
+
+### **Create Country (Full):**
+```json
+{
+  "name": "Test Country",
+  "iso3": "TST",
+  "iso2": "TS",
+  "capital": "Test Capital",
+  "currency": "TST",
+  "latitude": 20.593684,
+  "longitude": 78.96288
+}
+```
+
+### **Create City (Minimal):**
+```json
+{
+  "name": "Test City",
+  "country_id": 1
+}
+```
+
+## **Expected Responses:**
+
+### **Success Response:**
+```json
+{
+  "message": "Country created successfully",
+  "success": true,
+  "data": {
+    "id": 1,
+    "name": "Test Country",
+    "created_at": "2025-01-01T12:00:00Z"
+  },
+  "errorMsg": ""
+}
+```
+
+### **Error Response:**
+```json
+{
+  "message": "Validation error",
+  "success": false,
+  "data": null,
+  "errorMsg": "Name is required"
+}
+```
+
 
 ### Contributing
 

@@ -11,7 +11,14 @@ func CountryLib(router *gin.Engine) {
 
 	group.GET("/countries/", GetCountryList)
 	group.GET("/countries/:id", GetCountry)
-	group.GET("/cities/", GetCityList)
+	group.POST("/countries", CreateCountry)
+	group.PUT("/countries/:id", UpdateCountry)
+	group.DELETE("/countries/:id", DeleteCountry)
 	group.GET("/countries/search", SearchCountries)
+
+	group.GET("/cities/", GetCityList)
+	group.POST("/cities", CreateCity)
+	group.PUT("/cities/:id", UpdateCity)
+	group.DELETE("/cities/:id", DeleteCity)
 	group.GET("/cities/search", SearchCities)
 }
